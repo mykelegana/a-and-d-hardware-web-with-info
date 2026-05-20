@@ -16,7 +16,7 @@ Full-stack web application for managing hardware inventory, sales, and analytics
 ### Backend
 - **Framework**: NestJS
 - **Language**: TypeScript
-- **Database**: PostgreSQL + TypeORM
+- **Database**: MySQL + TypeORM
 - **Authentication**: JWT + Passport
 - **API Docs**: Swagger
 
@@ -32,7 +32,7 @@ Full-stack web application for managing hardware inventory, sales, and analytics
 ### Prerequisites
 - Node.js 16+
 - npm or yarn
-- PostgreSQL (for backend)
+- MySQL (for backend)
 
 ### Backend Setup
 ```bash
