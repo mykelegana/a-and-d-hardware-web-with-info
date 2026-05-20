@@ -7,14 +7,14 @@ Backend API built with NestJS for the A&D Hardware Web application. Provides RES
 - **Runtime**: Node.js
 - **Framework**: NestJS
 - **Language**: TypeScript
-- **Database**: TypeORM + PostgreSQL
+- **Database**: TypeORM + MySQL
 - **Authentication**: JWT with Passport
 - **API Documentation**: Swagger
 
 ## Prerequisites
 
 - Node.js 16+ and npm
-- PostgreSQL database
+- MySQL database
 - Environment variables configured
 
 ## Installation
