@@ -1,16 +1,84 @@
-# React + Vite
+# A&D Hardware Web - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern React frontend for the A&D Hardware Web application. Built with React, Vite, and React Router for fast, responsive user experience.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework**: React 19
+- **Build Tool**: Vite
+- **Styling**: CSS
+- **Routing**: React Router v7
+- **HTTP Client**: Axios
+- **UI Components**: Lucide React
+- **Data Visualization**: Recharts
+- **Excel Support**: XLSX
 
-## React Compiler
+## Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 16+ and npm
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+## Development
+
+```bash
+# Start development server with HMR
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+## Production
+
+```bash
+# Build optimized production bundle
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+## Code Quality
+
+```bash
+# Run ESLint
+npm run lint
+```
+
+## Project Structure
+
+```
+src/
+├── components/    # Reusable UI components
+├── pages/         # Page components (layouts)
+├── context/       # Context providers (Auth, Toast)
+├── api.js         # API client configuration
+├── App.jsx        # Main app component
+└── main.jsx       # Entry point
+```
+
+## Key Features
+
+- **Authentication**: Login with JWT token management via AuthContext
+- **Dashboard**: Sales overview and statistics with charts
+- **Products**: Product listing and management
+- **Categories**: Category management interface
+- **Sales**: Sales tracking and transaction management
+- **Reports**: Sales reports and analytics
+- **Settings**: Application configuration
+
+## Environment
+
+Create a `.env` file to configure the API endpoint:
+
+```env
+VITE_API_BASE_URL=http://localhost:3000
+```
+
+## License
+
+UNLICENSED
